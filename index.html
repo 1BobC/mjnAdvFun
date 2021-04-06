@@ -7,10 +7,29 @@
     <title>Modern Javascript exercises for variable scope to closure Especially nested functions</title>
 </head>
 <body>
-    <div><h1>Modern Javascript exercises for variable scope to closure Especially nested functions</h1></div>
-    <div><p>Variable scope, closure</p></div>
-    <div><p>Code blocks</p></div>
-    <div><p>Nested functions</p></div>
+    <div><h1>Modern Javascript exercises for variable scope to closure<br>Especially nested functions</h1>
+        <h3>Variable scope, closure</h3>
+        <p>A function can be created at any moment, passed as an argument to another function, and then called from a totally different place of code later.</p>
+        <p>But what happens if outer variables change since a function is created? Will the function get newer values or the old ones?</p>
+        <p>And what if a function is passed along as a parameter and called from another place of code, will it get access to outer variables at the new place?</p>
+    </div>
+    <div>
+        <h3>Code blocks</h3>
+        <p id= "bob1">An isolated code block does it's own thing!</p>
+        <p>You can use the same variable declaration in seperate blocks</p>
+        <p id= "bob2">One says 'Hello'</p>
+        <p id= "bob3">The other 'Goodbye'</p>
+        <p>There’d be an error without blocks. See jscript file for code without blocks - error, already declared!</p>
+        <p id= "bob4">What will this show? Using the first variable name, message is: Hello</p>
+        <p id= "bob5">What will this show? Using the same variable name, message is: error - redeclaration of let message</p>
+    </div>
+
+
+
+    <div><h3>Nested functions<h3>
+
+
+    </div>
     
     <script src="jscript.js"></script>
 </body>
