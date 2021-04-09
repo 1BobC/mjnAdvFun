@@ -22,12 +22,37 @@
         <p>There’d be an error without blocks. See jscript file for code without blocks - error, already declared!</p>
         <p id= "bob4">What will this show? Using the first variable name, message is: Hello</p>
         <p id= "bob5">What will this show? Using the same variable name, message is: error - redeclaration of let message</p>
+        <p id= "bob6">if for while and so on, variables declared in {...} are also only visible inside:</p>
+        <p>But when called outside the block we get ReferenceError for console and DOM.</p>
+        <p id= "bob7">Similarly for for and while loops: this is an alert exercise incrementing to 3.</p>
     </div>
-
-
-
-    <div><h3>Nested functions<h3>
-
+    <div>
+        <h3>Nested functions</h3>
+        <p id= "bob8">Here the nested function getFullName() is made for convenience. It can access the outer variables and so can return the full name.</p>
+        <p>More Nested -  a nested function can be returned: either as a property of a new object 
+        or as a result by itself. It can then be used somewhere else. No matter where, 
+        it still has access to the same outer variables.</p>
+        <p>Answer is shown in alert window</p>
+    </div>
+    <div><h3>Explanation of functions - Lexical environment- worth a new div!</h3>
+    <p>Step one variables</p>
+    <p>Step two function declarations</p>
+    <p>Step three inner and outer lexical environment...<p id= "bob9"></p></p>
+    <p>Info - Closure</p>   
+    <p>Info - Garbage collection</p>  
+    <p>Info - Real-life optimizations</p>       
+    </div>
+    <div><h3>Exercises - Tasks - incudes solutions!</h3>
+    <p>1 - Does a function pickup latest changes?</p>
+    <p>2 - Which variables are available?</p>
+    <p>3 - Are counters independent?</p>
+    <p>4 - Counter object</p>
+    <p>5 - Function in if</p>
+    <p>6 - Sum with closures</p>
+    <p>7 - Is variable visible?</p>
+    <p>8 - Filter through function</p>
+    <p>9 - Sort by field</p>
+    <p>10 - Army of functions</p>
 
     </div>
     
