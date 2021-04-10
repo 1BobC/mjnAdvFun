@@ -86,17 +86,43 @@
 
 //Now see explanation!
 //Step 1. Variables
+    // let phrase= "Hello";
+    // alert (phrase);
+    // console.log(phrase);
+    // document.getElementById("bob9a").innerHTML= "The variable 'phrase' contains: " + phrase;
 //Step 2. Function Declarations
+//When a Lexical Environment is created, a Function Declaration immediately becomes a ready-to-use function (unlike let, that is unusable till the declaration).
+    // let phrase = "Hello";
+    // function say(name){
+    //     return (`${phrase}, ${name}`);
+    // }
+    //     console.log(say("John"));
+    //     document.getElementById("bob9b").innerHTML= "Wow, Lexical Environment: " + say("John");
 //Step 3. Inner and outer Lexical Environment
-    let phrase= "Hello";
-    function say(name){ "use strict"
-        //alert(`${phrase}, ${name}`);
-        return (`${phrase}, ${name}`);
-    }
-        //say("John");
-         document.getElementById("bob9").innerHTML= "The phrase is: " + say("John");
+    // let phrase= "Hello";
+    // function say(name){ "use strict"
+    //     //alert(`${phrase}, ${name}`);
+    //     return (`${phrase}, ${name}`);
+    // }
+    //     //say("John");
+    //      document.getElementById("bob9").innerHTML= "The phrase is: " + say("John");
          
-//Step 4. Returning a function
+//Step 4. Returning a function - Yeah another counter exercise!
+    function makeCounter(){
+        let count= 0;
+        return function(){
+            return count++;
+        }
+    }
+        let counter= makeCounter();
+        alert (counter());
+        alert (counter());
+        alert (counter());
+        alert (counter());
+        alert (counter());
+        alert (counter());
+        alert (counter());
+
 //Info - Closure
 //Info - Garbage collection
 //Info - Real-life optimizations
