@@ -108,20 +108,20 @@
     //      document.getElementById("bob9").innerHTML= "The phrase is: " + say("John");
          
 //Step 4. Returning a function - Yeah another counter exercise!
-    function makeCounter(){
-        let count= 0;
-        return function(){
-            return count++;
-        }
-    }
-        let counter= makeCounter();
-        alert (counter());
-        alert (counter());
-        alert (counter());
-        alert (counter());
-        alert (counter());
-        alert (counter());
-        alert (counter());
+    // function makeCounter(){
+    //     let count= 0;
+    //     return function(){
+    //         return count++;
+    //     }
+    // }
+    //     let counter= makeCounter();
+    //     alert (counter());
+    //     alert (counter());
+    //     alert (counter());
+    //     alert (counter());
+    //     alert (counter());
+    //     alert (counter());
+    //     alert (counter());
 
 //Info - Closure
 //Info - Garbage collection
