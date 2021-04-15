@@ -126,13 +126,81 @@
 //Info - Closure
 //Info - Garbage collection
 //Info - Real-life optimizations
+
 //Exercises - Tasks - incudes solutions!
 //1 - Does a function pickup latest changes?
+    // let name= "John";
+    // function sayHi(){
+    //     return ("Hi, " + name);
+    // }
+    // name= "Pete"
+    // console.log(sayHi());
+    // document.getElementById("bob10").innerHTML= sayHi();
+
 //2 - Which variables are available?
+    // function makeWorker() {
+    //     let name= "Pete";
+    //     return function() {
+    //         console.log(name);
+    //         document.getElementById("bob11").innerHTML=  "Hello " + name;
+    //     };
+    // }
+    //     let name= "John";
+    //     let work= makeWorker();
+    //     work();
+
 //3 - Are counters independent?
+    // function makeCounter() {
+    //     let count= 0;
+    //     return function() {
+    //         return count++;
+    //     };
+    // }
+    //     let counter1= makeCounter();
+    //     let counter2= makeCounter();
+
+    //     alert (counter1());
+    //     alert (counter1());
+    //     alert (counter1());
+    //     alert (counter2());
+    //     alert (counter2());
+    //     alert (counter2());
+
 //4 - Counter object
+    // function Counter() {
+    //     let count= 0;
+    //     this.up= function() {
+    //         return ++count;
+    //     };
+    //     this.down= function() {
+    //         return --count;
+    //     }
+    // }
+    //     let counter= new Counter();
+    //     alert (counter.up());
+    //     alert (counter.up());
+    //     alert (counter.down());
+
 //5 - Function in if
+    // let phrase= "Hello ";
+    // if (true) {
+    //     let user= " John";
+    //     function sayHi() {
+    //         //alert (`${phrase} ${user}`);
+    //         return (`${phrase} ${user}`);
+    //     }
+    // }
+    //     // sayHi();
+    //     document.getElementById("bob12").innerHTML= sayHi();
+
 //6 - Sum with closures
+    function sum(a) {
+        return  function(b) {
+            return (a + b);   //takes "a" from outer lexical environment - of course!!
+        };
+    }
+        console.log (sum(3)(3));
+        document.getElementById("bob13").innerHTML= sum(9)(991);
 //7 - Is variable visible?
 //8 - Filter through function
 //9 - Sort by field
